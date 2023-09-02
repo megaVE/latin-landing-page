@@ -1,0 +1,237 @@
+@import url("./reset.css");
+
+/* General + Import */
+
+* {
+    /* border: solid 1px magenta !important;  */
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('../img/sunrise-landscapes-nature-fog-calm-dreamy-lakes-1920x1200-nature-lakes-hd-art-wallpaper-preview.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hidden{
+    display: none !important;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* Linearicons */
+
+.lnr{
+    display: flex;
+    align-items: center;
+}
+
+/* Fonts */
+
+h1, h2, h3, .nav-link a{
+    font-family: 'Overlock SC', cursive;
+    text-align: center;
+}
+
+h4, h5, h6, header{
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    text-align:justify;
+}
+
+ul, p{
+    font-family: 'Lora', serif;
+    text-align:justify;
+}
+
+/* Font Size */
+
+h1{
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2, .nav-link a, .nav-link .lnr{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+h3, header{
+    font-size: 24px;
+}
+
+h4{
+    font-size: 22px;
+}
+
+p, ul{
+    font-size: 20px;
+}
+
+/* Margin and Padding */
+
+h1, h2, h3{
+    padding: 10px 20px;
+}
+
+p{
+    padding: 5px 15px;
+}
+
+h4{
+    padding: 10px;
+}
+
+ul{
+    padding-left: 50px;
+}
+
+li{
+    padding: 5px;
+}
+
+/* Sidebar */
+
+aside nav{
+    border-right: groove #000 4px;
+    background-color: rgba(221, 153, 64, 0.3);
+    position: fixed;
+    padding: 90px 0;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    transition: 0.7s;
+    word-wrap: break-word;
+
+}
+
+.nav-link:hover{
+    background-color: rgba(221, 153, 64, 0.9);
+    cursor: pointer;
+}
+
+.nav-link a, .nav-link a:visited, .nav-link .lnr{
+    color: #000;
+    text-decoration: none;
+    text-shadow: 0px 0px 4px #777;
+}
+
+.nav-link .lnr{
+    padding-right: 10px;
+}
+
+/* Header */
+
+header{
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    height: 90px;
+    background-image: url('../img/02intonacopr_nt.jpg');
+    border-bottom: groove black 5px;
+}
+
+header h1{
+    text-shadow: 0px 0px 4px #ccc;
+}
+
+/* Main Container */
+
+#lessons-challenges-container{
+    margin-left: 20%;
+    width: 80%;
+    padding: 20px 0;
+    padding-top: 110px;
+    background-image: url('../img/white-stone-352480_1280.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Lessons and Challenges */
+
+article{
+    margin: 30px 10px;
+}
+
+.chapter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 5px rgba(221, 153, 64, 0.8);
+    background-color: rgba(221, 153, 64, 0.6);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.chapter.concluded{
+    border: solid 5px rgba(108, 253, 115, 0.8);
+    background-color: rgba(108, 253, 115, 0.6);
+}
+
+.chapter.unavailable{
+    border: solid 5px rgba(150, 150, 150, 0.8);
+    background-color: rgba(150, 150, 150, 0.6);
+}
+
+.chapter-title{
+    display: flex;
+}
+
+.chapter-title h2{
+    text-align: left;
+} 
+
+.challenge, .lesson{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    width: 60%;
+    border-radius: 20px;
+    background-color: rgba(150, 150, 150, 0.4);
+    cursor: pointer;
+}
+
+.challenge .lnr, .lesson .lnr{
+    margin-right: 20px;
+    font-size: 28px;
+}
+
+.challenge h3, .lesson h3{
+    text-align: left;
+}
+
+.challenge.complete{
+    background-color: rgb(173, 255, 47);
+}
+
+.challenge.incomplete{
+    background-color: rgb(255, 165, 0);
+}
+
+/* Footer */
+
+footer{
+    margin-left: 20%;
+    width: 80%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: solid #000 3px;
+    background-image: url('../img/black-stone-352480_1280.jpg');
+    color: silver;
+}
